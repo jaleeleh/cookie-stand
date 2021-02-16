@@ -58,7 +58,7 @@ function Cookieshopes(name,min,max,AvgCookie){
      lima.CookiePerHour()
 
      console.log(lima);
-     Cookieshopes.prototype.render=function () {
+     
      
         let parent1=document.getElementById('parent');
         let table1= document.createElement('table');
@@ -78,7 +78,9 @@ function Cookieshopes(name,min,max,AvgCookie){
             let th15 = document.createElement('th');
         Row1.appendChild(th15);
         th15.textContent = 'Daily Location Total';
-            
+
+        
+        Cookieshopes.prototype.render=function () {
 
         let valueRow = document.createElement('tr');
         table1.appendChild(valueRow);
@@ -96,6 +98,12 @@ function Cookieshopes(name,min,max,AvgCookie){
         let td15 = document.createElement('td');
         valueRow.appendChild(td15);
         td15.textContent =this.total;
+      }
+      seattle.render();
+        tokyo.render();
+        dubai.render();
+        paris.render();
+        lima.render();
 
         let valueRow2 = document.createElement('tr');
         table1.appendChild(valueRow2);
@@ -120,18 +128,10 @@ function Cookieshopes(name,min,max,AvgCookie){
     
     
     
-    }
+    
 
         
 
 
-     seattle.render();
-     tokyo.render();
-     dubai.render();
-     paris.render();
-     lima.render();
-     
-
-
-
+    
 
