@@ -1,0 +1,57 @@
+*{    padding: 10px;
+}
+
+#logo{
+height: 80px;
+width: 200px;
+margin-left:100px;
+
+}
+
+h1{
+margin-top:2px;
+border: sol;
+color: rgba(206, 74, 8, 0.719);
+font-family: 'Indie Flower', cursive;
+margin-left:100px;
+}
+
+#firstPicture{
+    height:300px;
+    width: 950px;
+}
+nav ul li
+{
+    display: inline-flex;
+
+
+}
+nav ul li a{
+color: rgba(206, 74, 8, 0.719) ;
+    text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.first{float:left}
+.second{float: right;}
+
+.location
+{margin-top: 200px;
+    border: solid;
+
+}
+.location ul li {display: inline-flex;}
+.location ul li a {
+    color: rgba(206, 74, 8, 0.719);
+font-family: 'Indie Flower', cursive;
+font-weight: bold;
+}
+
+.hours{
+border: solid;
+
+}
+.photos{border-radius: 50%;
+   height:200px;
+  width: 200px;}
