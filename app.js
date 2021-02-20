@@ -90,6 +90,7 @@ function Cookieshopes(name,min,max,AvgCookie){
 
       function tableFooter(){
         let valueRow2 = document.createElement('tr');
+        valueRow2.setAttribute('id','foot');
         table1.appendChild(valueRow2);
 
         let td1 = document.createElement('th');
@@ -136,17 +137,20 @@ function Cookieshopes(name,min,max,AvgCookie){
              // console.log(newShop)
              // console.log(shops)
    
-           let emptyPage = document.getElementById('parent');
-           emptyPage.textContent='';
+          //  let emptyPage = document.getElementById('parent');
+          //  emptyPage.textContent='';
    
            
-           headerRow();
-            for(let i=0;i<shops.length;i++){
-             shops[i].CustPerHour();
-             shops[i].CookiePerHour();
-             shops[i].render();
+           
+          //   for(let i=0;i<shops.length;i++){
+          //    shops[i].CustPerHour();
+          //    shops[i].CookiePerHour();
+          //    shops[i].render();
    
-           }
+          //  }
+          let i=shops.length-1;
+          shops[i].render();
+          document.getElementById('foot').remove();
            tableFooter();
           
         }
